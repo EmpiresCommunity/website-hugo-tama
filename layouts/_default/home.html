@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 class="title">{{ .Title }}</h1>
+
+<p class="inverse">
+Here are latest 20 articles on this website <strong>ordered by publication date</strong>, starting with the most recently published article.
+</p>
+
+<ul class="posts">
+  {{ range where (where .Site.RegularPages "Section" "articles") ".File.Ext" "md" | first 20  }}
+  <li class="post">
+    <a href="{{ .Permalink }}">
+      <date>{{ .Date.Format "02.01.2006" }}</date>
+      <span >{{ .Title }} {{ if .Draft }}(draft){{ end }}</span>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
