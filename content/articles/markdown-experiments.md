@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Markdown Experiments
 date: 2020-06-12
 tags:
