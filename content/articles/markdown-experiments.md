@@ -1,11 +1,8 @@
----
-title: Markdown Experiments
-date: 2020-06-12
-tags:
-  - markdown
-  - tag2
-  - testTestTest
----
++++
+title = "Markdown Experiments"
+date = "2020-06-30T08:43:35-04:00"
+tags = ["markdown", "tag2", "testTestTest"]
++++
 
 *Thanks to [markdown-it](https://github.com/markdown-it/markdown-it)
 for most of the content of this file! --nm*

@@ -1,5 +1,0 @@
-baseURL: http://yourdomain.org/
-languageCode: en-us
-title: Example hugo website
-taxonomies:
-  tag: tags
