@@ -1,5 +1,5 @@
 ---
-page_title: Home
+title: Home
 ---
 
 # An interesting book about birds
