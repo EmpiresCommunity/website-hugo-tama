@@ -1,5 +1,5 @@
-baseURL = "http://yourdomain.org/"
+baseURL = "http://empiresmod.com/"
 languageCode = "en-us"
-title = "Example hugo website"
+title = "Empiresmod"
 [taxonomies]
   tag = "tags"

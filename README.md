@@ -1,35 +1,36 @@
-# What?
+# Empiresmod main page
 
-A minimal hugo website, based on the [themeless gitless introduction to hugo](https://www.ii.com/themeless-gitless-intro-hugo/), to serve as a proof of concept for features you will need in every hugo website. You can fork this repository to start your website.
+The main page for [Empiresmod, a free indie RTS/FPS game](http://www.empiresmod.com/) - free open source software built with [Hugo](gohugo.io).
+This repository makes it possible for anyone, not just Empiresmod developers, to improve empiresmod.com by [submitting a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+Hugo makes it easy to modify and view your local copy; you are expected to view and test before submitting your modification.
 
-Current features:
+# Clone this repository
 
-- Sass @import for [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) CSS'ing.
-- A navigation bar (in `layouts/_default/baseof.html`)
-- test and deploy scripts to hide the flags hugo should receive
-- About & Contact pages
-- Articles indexed by tag
-
-Feel free to open a pull request if there's anything missing.
-
-# Setup instructions:
-
-## 1) Install extended hugo
-
-Follow the guide at [gohugo.io/getting-started/installing/](gohugo.io/getting-started/installing/)
-
-## 2) Clone and build 
+Scroll up, copy from the green "Clone or download" button on the right, plug that into your git GUI (e.g. [GitExtensions](https://gitextensions.github.io/)) or copy the following into a terminal window:
 
 ```
-git clone http://github.com/TamaMcGlinn/hugo-tutorial
-cd hugo-tutorial
-./test
+git clone git@github.com:EmpiresCommunity/website.git
 ```
 
-## 3) View & edit cycle
+# Install hugo
 
-That last command runs `hugo server -D` which displays a local server (hosted at [http://localhost:1313/](http://localhost:1313/)) which automatically updates if you modify the files it depends on.
+[Install hugo as described here](https://gohugo.io/getting-started/installing/), and then run:
 
-## 4) Deploy
+```
+hugo server -D
+```
 
-The deploy script builds the site into `public/`. Add to this script whatever you need to actually upload it to the production server.
+Which serves a local version from [localhost:1313](http://localhost:1313/) which you should test. 
+
+# Deploy
+
+You can't deploy unless the Empiresmod dev team has given you 'developer' rights on EmpiresmodCommunity. Everyone else, submit a pull request.
+
+The `./deploy` script builds the full site using hugo, and then pushes the public/ subdirectory to this repository, git@github.com:EmpiresCommunity/website on the gh-pages branch. That serves empiresmod.com directly. We previously had a script on a DreamHost webserver that kept up to date on the gh-pages branch, and gave some advantages such as https support, which we can't get with github pages, but the code had a bug so we torched it and ran away.
+
+Deploy uses the existing repository in public if it is already present. The advantage of that is that your upload will be smaller. However, since it always force pushes, each developer has their own version of all the commits, which means that if two developers keep pushing, the uploads they both must do to update the site become larger and larger. The way to get the best of both worlds is to periodically remove the whole public/ directory, so you don't keep uploading old commits.
+
+# Stuck?
+
+If you get stuck trying to follow these steps, [open an issue](https://github.com/EmpiresCommunity/website/issues/new).
+

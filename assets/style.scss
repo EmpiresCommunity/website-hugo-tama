@@ -1,8 +1,5 @@
 // styles.scss
 // https://sass-lang.com/guide
-@import 'base';
-
-.inverse {
-  background-color: $primary-color;
-  color: white;
-}
+@import 'darkstrap';
+@import 'all';
+@import 'main';
