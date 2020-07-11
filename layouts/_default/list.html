@@ -1,9 +1,9 @@
 {{ define "main" }}
   {{ .Content }}
   {{ range (where .Site.RegularPages "Section" "posts") }}
-    <article>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      {{ .Summary }}
-    </article>
+  <div class="post">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p><em>by {{ .Author }} on {{ .Date }}</em></p>
+  </div>
   {{ end }}
 {{ end }}
