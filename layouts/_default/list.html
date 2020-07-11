@@ -1,9 +1,15 @@
 {{ define "main" }}
-  {{ .Content }}
+{{ .Content }}
+<div class="container posts">
+  <div class="row">
+      <h1>All posts</h1>
   {{ range (where .Site.RegularPages "Section" "posts") }}
+  {{/* TODO; this code for each post link is duplicated in home.html ! */}}
   <div class="post">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    <p><em>by {{ .Author }} on {{ .Date }}</em></p>
+    <p><em>by {{ .Params.Author }} on {{ dateFormat "January 2, 2006" .Date }}</em></p>
   </div>
   {{ end }}
+  </div> {{/* Row */}}
+</div> {{/* Container posts */}}
 {{ end }}

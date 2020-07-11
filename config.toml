@@ -2,4 +2,6 @@ baseURL = "http://empiresmod.com/"
 languageCode = "en-us"
 title = "Empiresmod"
 [taxonomies]
-  tag = "tags"
+tag = "tags"
+[frontmatter]
+date  = [":filename", ":default"]

@@ -1,9 +1,7 @@
 {{ define "main" }}
-<div class="container">
-  <h1 class="title">{{ .Title }} (single page)
-    <br>
-    <span class="subtitle">{{ .Params.Subtitle }}</span>
-  </h1>
+<div class="container post">
+  <h1>{{ .Title }}</h1>
+  <p class="author">By {{ .Params.Author }} on {{ dateFormat "January 2, 2006" .Date }}</p>
   <ul class="tags">
     {{ range .Params.tags }}
     <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
