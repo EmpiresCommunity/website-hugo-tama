@@ -69,54 +69,23 @@ Completed tracks:
 
 _Alliance_: 
 
-<audio
-        controls
-        src="../img/june2020update/Alliance.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-</audio>
-
-
+{{< audio "../img/june2020update/Alliance.mp3" >}}
 
 _Start_: 
 
-<audio
-        controls
-        src="../img/june2020update/Start.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-</audio>
-
+{{< audio "../img/june2020update/Start.mp3" >}}
 
 _Victory_: 
 
-<audio
-        controls
-        src="../img/june2020update/Victory.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-</audio>
-
+{{< audio "../img/june2020update/Victory.mp3" >}}
 
 _Valiance_: 
 
-<audio
-        controls
-        src="../img/june2020update/Valiance.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-</audio>
-
+{{< audio "../img/june2020update/Valiance.mp3" >}}
 
 _In Distress_: 
 
-<audio
-        controls
-        src="../img/june2020update/InDistress.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-</audio>
-
+{{< audio "../img/june2020update/InDistress.mp3" >}}
 
 I realize there’s a LOT left to be worked on based on that list, but I am confident in completing it for this port. Unfortunately, my work situation has rapidly deteriorated in the past few weeks due to COVID however, so it will be an ongoing process while I attempt to solidify that and other aspects of my life. 
 

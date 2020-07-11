@@ -1,0 +1,7 @@
+{{ range where .Site.RegularPages "Section" "articles" }}
+  <article>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Draft }} (draft){{ end }}</h2>
+    <date>{{ .Date.Format "02.01.2006" }}</date>
+    {{ .Summary }}
+  </article>
+{{ end }}
